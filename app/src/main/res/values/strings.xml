@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">NoteDroid</string>
+    <string name="str_last_edited">"Last edited: "</string>
 </resources>
