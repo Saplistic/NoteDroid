@@ -1,8 +1,9 @@
 package be.ehb.notedroid.models;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class Note {
+public class Note implements Serializable {
 
     private String title;
     private String content;
