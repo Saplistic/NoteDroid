@@ -17,13 +17,13 @@ import java.time.format.FormatStyle;
 import be.ehb.notedroid.R;
 import be.ehb.notedroid.models.Note;
 
-public class DetailsFragment extends Fragment {
+public class NoteDetailsFragment extends Fragment {
 
-    public DetailsFragment() {
+    public NoteDetailsFragment() {
     }
 
-    public static DetailsFragment newInstance() {
-        DetailsFragment fragment = new DetailsFragment();
+    public static NoteDetailsFragment newInstance() {
+        NoteDetailsFragment fragment = new NoteDetailsFragment();
         return fragment;
     }
     @Override

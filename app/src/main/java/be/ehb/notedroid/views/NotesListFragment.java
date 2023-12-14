@@ -16,9 +16,9 @@ import be.ehb.notedroid.R;
 import be.ehb.notedroid.viewmodels.NotesViewModel;
 import be.ehb.notedroid.views.viewutils.NotesRecyclerViewAdapter;
 
-public class NotesFragment extends Fragment {
+public class NotesListFragment extends Fragment {
 
-    public NotesFragment() {
+    public NotesListFragment() {
     }
 
     @Override

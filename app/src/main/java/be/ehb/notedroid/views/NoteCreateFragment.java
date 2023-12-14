@@ -20,17 +20,17 @@ import be.ehb.notedroid.R;
 import be.ehb.notedroid.models.Note;
 import be.ehb.notedroid.viewmodels.NotesViewModel;
 
-public class CreateFragment extends Fragment {
+public class NoteCreateFragment extends Fragment {
 
     EditText title;
     EditText content;
     Button submitBtn;
 
-    public CreateFragment() {
+    public NoteCreateFragment() {
     }
 
-    public static CreateFragment newInstance() {
-        CreateFragment fragment = new CreateFragment();
+    public static NoteCreateFragment newInstance() {
+        NoteCreateFragment fragment = new NoteCreateFragment();
         return fragment;
     }
 
