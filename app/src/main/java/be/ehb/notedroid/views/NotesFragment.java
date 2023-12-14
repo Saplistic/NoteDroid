@@ -29,7 +29,12 @@ public class NotesFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_notes_list, container, false);
+        return inflater.inflate(R.layout.fragment_notes_list, container, false);
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
 
         RecyclerView notesRecyclerView = view.findViewById(R.id.rv_notes);
 
@@ -40,6 +45,5 @@ public class NotesFragment extends Fragment {
         notesRecyclerView.setAdapter(adapter);
 
         mNotesViewModel.getLiveNotes().observe(getViewLifecycleOwner(), notes -> adapter.setNoteItems(notes));
-        return view;
     }
 }
